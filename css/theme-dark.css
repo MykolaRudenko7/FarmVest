@@ -1,0 +1,194 @@
+body {
+	background: #263238;
+	color: #FFFFFF;
+}
+
+.text {
+	color: #FFFFFF;
+}
+
+.title {
+	color: #FFFFFF;
+}
+
+.button {
+	background-color: #23B123;
+}
+
+.button:hover {
+	background-color: #299529;
+}
+
+.button_transparent {
+	border: 1px solid #FFFFFF;
+	background-color: transparent;
+}
+
+.button_transparent:hover {
+	background-color: #fff;
+}
+
+.form {
+	background: #FFFFFF;
+}
+
+.form__input {
+	color: #263238;
+}
+
+.form__input::-webkit-input-placeholder {
+	color: #263238;
+}
+
+.form__input::-moz-placeholder {
+	color: #263238;
+}
+
+.form__input:-ms-input-placeholder {
+	color: #263238;
+}
+
+.form__input::-ms-input-placeholder {
+	color: #263238;
+}
+
+.form__input::placeholder {
+	color: #263238;
+}
+
+@media (max-width: em(767.98)) {
+
+	.icon-menu span,
+	.icon-menu::before,
+	.icon-menu::after {
+		background-color: #fff;
+	}
+}
+
+body {
+	background: #263238;
+}
+
+.header.header-scroll {
+	background-color: rgba(34, 43, 47, 0.9921568627);
+}
+
+@media (max-width: em(767.98)) {
+	.menu__body {
+		background-color: #232c31;
+	}
+
+	.menu__body::before {
+		background-color: #232c31;
+	}
+}
+
+.main-block__container-big::before,
+.main-block__container-big::after {
+	border: 1px solid #fff;
+}
+
+.icons-main-block__item {
+	position: absolute;
+}
+
+@media (max-width: em(767.98)) {
+	.icons-main-block__item {
+		opacity: 0.3;
+	}
+}
+
+.icons-main-block__item_1 {
+	top: 69%;
+	left: 0.55%;
+}
+
+.icons-main-block__item_2 {
+	top: 38.8%;
+	left: 14.6%;
+}
+
+.icons-main-block__item_3 {
+	top: 77.2%;
+	left: 24.9%;
+}
+
+.icons-main-block__item_4 {
+	top: 13.7%;
+	right: 26.1%;
+}
+
+.icons-main-block__item_5 {
+	top: 42.75%;
+	right: 17.2%;
+}
+
+.icons-main-block__item_6 {
+	top: 79.2%;
+	right: 16%;
+}
+
+.icons-main-block__item_7 {
+	top: 37.4%;
+	right: 1%;
+}
+
+.steps-how__icon {
+	background: rgba(0, 128, 0, 0.1);
+}
+
+.image-block {
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.image-block::after,
+.image-block::before {
+	border: 1px solid #fff;
+}
+
+.image-block-2 {
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.image-block-2::after,
+.image-block-2::before {
+	border: 1px solid #fff;
+}
+
+.spollers-pathway__title {
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.spollers-pathway__body {
+	background: rgba(255, 255, 255, 0.009);
+}
+
+.figures__item::before {
+	background-color: rgba(255, 255, 255, 0.05);
+	color: #fff;
+}
+
+.item-customers {
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.download__body {
+	background: rgba(255, 255, 255, 0.07);
+}
+
+.download__body::before,
+.download__body::after {
+	border: 1px solid rgba(255, 255, 255, 0.37);
+}
+
+.footer {
+	background: rgba(53, 64, 70, 0.5);
+}
+
+.top-footer {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+}
+
+.social__item {
+	background: #FFFFFF;
+}
