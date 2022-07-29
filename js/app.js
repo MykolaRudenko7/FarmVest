@@ -75,34 +75,41 @@
 
 // ------------------------------------------------------------------------
 
-
 // кнопки зміни теми
 let changeThemeButtons = document.querySelectorAll('.changeTheme');
 
-// до кожної кнопки подія кліку
 changeThemeButtons.forEach(button => {
-    button.addEventListener('click', function () {
+	// до кожної кнопки подія кліку
+   button.addEventListener('click', function () {
 		// Поміщаю в перемінну назву теми з кнопки з атрибута data-theme
-        let theme = this.dataset.theme; 
-		  // визов функції яка міняє і передаєм в не назву(з атр кнопки)
-        applyTheme(theme); 
-    });
+      let theme = this.dataset.theme;
+
+		// визов функції яка міняє і передаєм в не назву(з атр кнопки)
+      applyTheme(theme);
+   });
 });
 
 function applyTheme(themeName) {
 	//в пустий link, де є арибут [title="theme"] додаєм новий атрибут і в нього поміщаєм значення (шлях)
-    document.querySelector('[title="theme"]').setAttribute('href', `css/theme-${themeName}.css`); 
+	document.querySelector('[title="theme"]').setAttribute('href', `css/theme-${themeName}.css`);
+	
 	//  для кожної кнопки зміни події додаем стиль дисплею (показую кнопу)
-	 changeThemeButtons.forEach(button => {
-        button.style.display = 'block'; // Показываем все кнопки смены темы
-    });
-    document.querySelector(`[data-theme="${themeName}"]`).style.display = 'none'; // Но скрываем кнопку для активной темы
+   changeThemeButtons.forEach(button => {
+   button.style.display = 'block';
+   });
+
+	// виключаю кнопку для активноїї теми
+   document.querySelector(`[data-theme="${themeName}"]`).style.display = 'none';
+   localStorage.setItem('theme', themeName);
 }
 
-let activeTheme = localStorage.getItem('theme'); // Проверяем есть ли в LocalStorage записано значение для 'theme' и присваиваем его переменной.
+// провіряю запис в LocalStorage для 'theme' и присвоюю його перемінній
+let activeTheme = localStorage.getItem('theme');
 
+// якщо значення не записано, або його значення 'light' приміняю світлу бему
 if(activeTheme === null || activeTheme === 'light') { // Если значение не записано, или оно равно 'light' - применяем светлую тему
-    applyTheme('light');
-} else if (activeTheme === 'dark') { // Если значение равно 'dark' - применяем темную
-    applyTheme('dark');
+   applyTheme('light');
+	// якщо 'dark' - то темну
+} else if (activeTheme === 'dark') {
+   applyTheme('dark');
 }

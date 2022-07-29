@@ -113,11 +113,12 @@ body {
 	color: #23B123;
 }
 
+@media (max-width: 767.98px) {
+	.menu__body {
+			background: #263238;
+	}
 
-.menu__body {
-	background: #263238;
-}
-
-.menu__body::before {
-	background: #263238;
+	.menu__body::before {
+			background: #263238;
+	}
 }

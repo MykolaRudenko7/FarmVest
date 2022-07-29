@@ -151,10 +151,15 @@ body {
 	filter: hue-rotate(50deg);
 }
 
-.menu__body {
-	background-color: #FFFFFF;
+@media (max-width: 767.98px){
+	.menu__body {
+		background-color: #FFFFFF;
+	}
+	.menu__body::before {
+		background-color: #FFFFFF;
+	}
 }
 
-.menu__body::before {
-	background-color: #FFFFFF;
+.top-footer__image {
+	filter: invert(100%);
 }
