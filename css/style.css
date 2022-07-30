@@ -355,7 +355,6 @@ body {
 
 .form__button {
 	font-weight: 500;
-	line-height: 111%;
 	padding: 1.375rem 1.5625rem;
 	min-width: 10.1875rem;
 	font-size: 1.125rem;
@@ -2321,7 +2320,7 @@ body {
 
 @media (max-width: 61.99875em) {
 	.button {
-		padding: 1.125rem 1rem;
+		padding: 1.2rem 1rem;
 	}
 
 	.button_transparent {
