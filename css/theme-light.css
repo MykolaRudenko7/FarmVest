@@ -20,11 +20,13 @@ body {
 .button_transparent {
 	border: 1px solid #263238;
 	background-color: transparent;
+	transition: all 0.3s ease 0s;
 }
 
 .button_transparent:hover {
 	background-color: #008000;
 	color: #FFFFFF;
+	border: transparent;
 }
 
 .form {
@@ -162,4 +164,31 @@ body {
 
 .top-footer__image {
 	filter: invert(100%);
+}
+
+/* slider */
+
+
+.btn-prev,
+.btn-next {
+	background-color: rgba(38, 50, 56, 0.6784313725);
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	background-color: rgba(38, 50, 56, 0.8745098039);
+}
+
+/* Кружочки */
+
+.slider-dots__item {
+	background-color: rgba(38, 50, 56, 0.8745098039);
+}
+
+.slider-dots__item:hover {
+	background-color: #008000;
+}
+
+.slider-dots .active {
+	background-color: #008000;
 }

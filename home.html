@@ -73,7 +73,8 @@
 								etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur</p>
 							<div class="main-block__form">
 								<form action="" class="form">
-									<input class="form__input" name="Email" autocomplete="off" type="email" placeholder="Enter your email">
+									<input class="form__input" name="Email" autocomplete="off" type="email"
+										placeholder="Enter your email">
 									<button class="form__button button" type="submit">Get Started</button>
 								</form>
 							</div>
@@ -289,11 +290,43 @@
 							</ol>
 							<a href="" class="why__button button">Learn More</a>
 						</div>
-						<div class="why__image image-block_without">
-							<picture>
-								<source srcset="img/main-block/choose/choose-card.webp" type="image/webp"><img
-									class="image-block__image" src="img/main-block/choose/choose-card.jpg" alt="why-choose">
-							</picture>
+
+						<div class="why__image slider">
+							<div class="slider__wrapper">
+								<div class="slider__item active">
+									<picture>
+										<source srcset="img/main-block/choose/choose-card.webp" type="image/webp"><img
+											src="img/main-block/choose/choose-card.jpg" alt="why-choose">
+									</picture>
+								</div>
+								<div class="slider__item">
+									<picture>
+										<source srcset="img/main-block/how-icons/how-card.webp" type="image/webp"><img
+											src="img/main-block/how-icons/how-card.jpg" alt="why-choose">
+									</picture>
+								</div>
+								<div class="slider__item">
+									<picture>
+										<source srcset="img/main-block/choose/choose-card.webp" type="image/webp"><img
+											src="img/main-block/choose/choose-card.jpg" alt="why-choose">
+									</picture>
+								</div>
+								<div class="slider__item">
+									<picture>
+										<source srcset="img/main-block/customers/customers-image01.webp" type="image/webp"><img
+											src="img/main-block/customers/customers-image01.jpg" alt="why-choose">
+									</picture>
+								</div>
+
+								<a class="slider__btn btn-prev"></a>
+								<a class="slider__btn btn-next"></a>
+							</div>
+							<div class="slider__dots slider-dots">
+								<span class="slider-dots__item active"></span>
+								<span class="slider-dots__item"></span>
+								<span class="slider-dots__item"></span>
+								<span class="slider-dots__item"></span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -379,7 +412,8 @@
 							do
 							it!</p>
 						<form action="" class="form">
-							<input class="form__input" name="Email" autocomplete="off" type="email" placeholder="Enter your email">
+							<input class="form__input" name="Email" autocomplete="off" type="email"
+								placeholder="Enter your email">
 							<button class="form__button button" type="submit">Subscribe</button>
 						</form>
 					</div>
@@ -428,7 +462,6 @@
 				</div>
 			</div>
 		</footer>
-
 	</div>
 
 	<script src="js/app.js"></script>

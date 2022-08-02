@@ -122,3 +122,31 @@ body {
 			background: #263238;
 	}
 }
+
+
+/* slider */
+
+
+.btn-prev,
+.btn-next {
+	background-color: rgba(38, 50, 56, 0.6784313725);
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	background-color: rgba(38, 50, 56, 0.8745098039);
+}
+
+/* Кружочки */
+
+.slider-dots__item {
+	background-color: #fff;
+}
+
+.slider-dots__item:hover {
+	background-color: #23B123;
+}
+
+.slider-dots .active {
+	background-color: #23B123;
+}

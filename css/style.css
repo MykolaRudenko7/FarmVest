@@ -2644,3 +2644,145 @@ body {
 	min-width: 30px;
 	min-height: 30px;
 }
+
+
+
+/* slider */
+
+.slider {
+	-ms-grid-column-align: center;
+	justify-self: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 1.5625rem;
+	width: 100%;
+}
+
+.slider__wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
+}
+
+.slider__item {
+	display: none;
+	-webkit-animation-name: fade;
+	animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+}
+
+.slider__item img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.slider .active {
+	display: block;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.3;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.3;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.btn-prev,
+.btn-next {
+	cursor: pointer;
+	position: absolute;
+	top: 0%;
+	width: auto;
+	height: 100%;
+	padding: 1.5625rem;
+	/* background-color: rgba(38, 50, 56, 0.6784313725); */
+	font-weight: bold;
+	font-size: 1.5625rem;
+	-webkit-transition: 0.5s ease 0s;
+	-o-transition: 0.5s ease 0s;
+	transition: 0.5s ease 0s;
+}
+
+.btn-next {
+	right: 0;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	/* background-color: rgba(38, 50, 56, 0.8745098039); */
+}
+
+/* Кружочки */
+
+.slider-dots {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-column-gap: 1.25rem;
+	-moz-column-gap: 1.25rem;
+	column-gap: 1.25rem;
+}
+
+.slider-dots__item {
+	cursor: pointer;
+	height: 20px;
+	width: 20px;
+	/* background-color: #fff; */
+	border-radius: 50%;
+	display: inline-block;
+	-webkit-transition: background-color 0.6s ease;
+	-o-transition: background-color 0.6s ease;
+	transition: background-color 0.6s ease;
+}
+
+.slider-dots__item:hover {
+	/* background-color: #23B123; */
+}
+
+.slider-dots .active {
+	/* background-color: #23B123; */
+}
+
+@supports (padding-bottom: clamp(3.75rem, 1.6447368421rem + 10.5263157895vw, 12.5rem)) {
+	.customers {
+		padding-bottom: clamp(3.75rem, 1.6447368421rem + 10.5263157895vw, 12.5rem);
+	}
+}
+
+@supports not (padding-bottom: clamp(3.75rem, 1.6447368421rem + 10.5263157895vw, 12.5rem)) {
+	.customers {
+		padding-bottom: calc(3.75rem + 8.75 * (100vw - 20rem) / 83.125);
+	}
+}
