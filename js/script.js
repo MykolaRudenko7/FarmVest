@@ -8,11 +8,12 @@ import spoilers from "./modules/spoilers.js";
 
 window.addEventListener("DOMContentLoaded", function (e) {
   "use strict";
-  burger();
+
   changeTheme(".changeTheme");
-  //   dynamicButton();
-  //   forms();
-  //   headerScroll();
-  //   slider();
-  //   spoilers();
+  burger();
+  dynamicButton();
+  forms();
+  headerScroll();
+  slider();
+  spoilers(".spollers-pathway__title");
 });
